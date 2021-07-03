@@ -47,27 +47,27 @@ class DashBoard extends StatelessWidget {
         label: Text("Add New Product"),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      body: Center(
-        child: SingleChildScrollView(
-          physics: BouncingScrollPhysics(),
-          padding: EdgeInsets.symmetric(horizontal: 7),
-          child: Column(
+      body: Column(
+        children: [
+          GridView(
+            physics: NeverScrollableScrollPhysics(),
+            shrinkWrap: true,
+            gridDelegate:
+                SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
             children: [
-              GridView(
-                physics: NeverScrollableScrollPhysics(),
-                shrinkWrap: true,
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2),
-                children: [
-                  Sections(
-                      title: "Total Products",
-                      count: homeController.totalProducts().toString()),
-                  Obx(() => Sections(
-                      title: "Total In Users Cart",
-                      count: cartController.cartLength.toString())),
-                ],
-              ),
-              ListView.builder(
+              Sections(
+                  title: "Total Products",
+                  count: homeController.totalProducts().toString()),
+              Obx(() => Sections(
+                  title: "Total In Users Cart",
+                  count: cartController.cartLength.toString())),
+            ],
+          ),
+          Expanded(
+            child: SingleChildScrollView(
+              physics: BouncingScrollPhysics(),
+              padding: EdgeInsets.symmetric(horizontal: 7),
+              child: ListView.builder(
                 physics: NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
                 itemCount: homeController.totalList.length,
@@ -97,9 +97,9 @@ class DashBoard extends StatelessWidget {
                   );
                 },
               ),
-            ],
+            ),
           ),
-        ),
+        ],
       ),
     );
   }
