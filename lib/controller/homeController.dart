@@ -73,7 +73,7 @@ class HomeController extends GetxController {
     itemList.value = newList;
 
     List<ItemModel> fullList = [...itemBox.values, ...dummyItems];
-    fullList.shuffle(Random());
+    fullList.sort((a, b) => a.dateTime.compareTo(b.dateTime));
     totalList.value = fullList;
   }
 

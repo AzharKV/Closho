@@ -14,7 +14,6 @@ hiveInitializing() async {
   Hive.registerAdapter(ItemModelAdapter());
   Hive.registerAdapter(CartModelAdapter());
 
-
   //Open Hive box
   await Hive.openBox<ItemModel>(boxItem);
   await Hive.openBox<CartModel>(boxCart);

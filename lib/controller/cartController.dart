@@ -33,7 +33,7 @@ class CartController extends GetxController {
         amount: data.amount,
         isAsset: data.isAsset,
         color: color.value,
-        imageUrl: data.imageUrl,
+        imageUrl: data.imagePath,
         dateTime: dateTime,
         category: data.category,
         gender: data.gender);
@@ -52,6 +52,7 @@ class CartController extends GetxController {
       Get.snackbar("", "Please Select Your Size",
           snackPosition: SnackPosition.BOTTOM);
     }
+    size.value = "";
 
     return isSuccess;
   }

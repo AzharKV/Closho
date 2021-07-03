@@ -1,9 +1,10 @@
 import 'dart:io';
-import 'package:closho/constants/colors.dart';
 import 'package:closho/constants/strings.dart';
 import 'package:closho/controller/cartController.dart';
 import 'package:closho/controller/homeController.dart';
 import 'package:closho/model/itemModel.dart';
+import 'package:closho/view/admin/itemsDetails.dart';
+import 'package:closho/widgets/gridViewSections.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -42,7 +43,9 @@ class DashBoard extends StatelessWidget {
         centerTitle: true,
       ),
       floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {},
+        onPressed: () => Get.to(() => ItemScreen(),
+            duration: Duration(milliseconds: 700),
+            transition: Transition.downToUp),
         shape: StadiumBorder(),
         label: Text("Add New Product"),
       ),
@@ -55,10 +58,10 @@ class DashBoard extends StatelessWidget {
             gridDelegate:
                 SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
             children: [
-              Sections(
+              GridViewSections(
                   title: "Total Products",
                   count: homeController.totalProducts().toString()),
-              Obx(() => Sections(
+              Obx(() => GridViewSections(
                   title: "Total In Users Cart",
                   count: cartController.cartLength.toString())),
             ],
@@ -67,71 +70,41 @@ class DashBoard extends StatelessWidget {
             child: SingleChildScrollView(
               physics: BouncingScrollPhysics(),
               padding: EdgeInsets.symmetric(horizontal: 7),
-              child: ListView.builder(
-                physics: NeverScrollableScrollPhysics(),
-                shrinkWrap: true,
-                itemCount: homeController.totalList.length,
-                itemBuilder: (BuildContext context, int index) {
-                  ItemModel data = homeController.totalList[index];
-                  return Card(
-                    margin:
-                        EdgeInsets.symmetric(horizontal: 5.0, vertical: 5.0),
-                    elevation: 3.0,
-                    child: ListTile(
-                        leading: ClipRRect(
-                          borderRadius: BorderRadius.circular(50.0),
-                          child: data.isAsset!
-                              ? Image.asset(
-                                  "${data.imageUrl[0]}",
-                                  fit: BoxFit.cover,
-                                  height: 50.0,
-                                  width: 50.0,
-                                )
-                              : Image.file(
-                                  File("${data.imageUrl[0]}"),
-                                  fit: BoxFit.fill,
-                                ),
-                        ),
-                        title: Text(data.name),
-                        trailing: Text("${data.amount} ₹")),
-                  );
-                },
+              child: Obx(
+                () => ListView.builder(
+                  physics: NeverScrollableScrollPhysics(),
+                  shrinkWrap: true,
+                  itemCount: homeController.totalList.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    ItemModel data = homeController.totalList[index];
+                    return Card(
+                      margin:
+                          EdgeInsets.symmetric(horizontal: 5.0, vertical: 5.0),
+                      elevation: 3.0,
+                      child: ListTile(
+                          leading: ClipRRect(
+                            borderRadius: BorderRadius.circular(50.0),
+                            child: data.isAsset!
+                                ? Image.asset(
+                                    "${data.imagePath[0]}",
+                                    fit: BoxFit.cover,
+                                    height: 50.0,
+                                    width: 50.0,
+                                  )
+                                : Image.file(
+                                    File("${data.imagePath[0]}"),
+                                    fit: BoxFit.cover,
+                                    height: 50.0,
+                                    width: 50.0,
+                                  ),
+                          ),
+                          title: Text(data.name),
+                          trailing: Text("${data.amount} ₹")),
+                    );
+                  },
+                ),
               ),
             ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class Sections extends StatelessWidget {
-  final String title;
-  final String count;
-
-  const Sections({Key? key, required this.title, required this.count})
-      : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      color: Colors.teal.withOpacity(0.5),
-      shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(Radius.circular(25))),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          Text(
-            title,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-                color: customWhite, fontWeight: FontWeight.bold, fontSize: 20),
-          ),
-          Text(
-            count,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-                color: customWhite, fontWeight: FontWeight.bold, fontSize: 40),
           ),
         ],
       ),

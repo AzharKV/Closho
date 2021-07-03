@@ -6,7 +6,7 @@ ItemModel itemModel1 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Sharvani",
     amount: 1500.0,
-    imageUrl: [
+    imagePath: [
       "${dressKids + "1.1.jpg"}",
       "${dressKids + "1.jpeg"}",
       "${dressKids + "1.2.jpg"}",
@@ -24,7 +24,7 @@ ItemModel itemModel2 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Little Top",
     amount: 700.0,
-    imageUrl: [
+    imagePath: [
       "${dressKids + "2.1.jpg"}",
       "${dressKids + "2.jpg"}",
     ],
@@ -41,7 +41,7 @@ ItemModel itemModel3 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Umbrella Top",
     amount: 800.0,
-    imageUrl: [
+    imagePath: [
       "${dressKids + "3.1.jpg"}",
       "${dressKids + "3.jpg"}",
       "${dressKids + "3.2.jpg"}",
@@ -59,7 +59,7 @@ ItemModel itemModel4 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Lite Stripo",
     amount: 1000.0,
-    imageUrl: [
+    imagePath: [
       "${dressKids + "4.1.jpg"}",
       "${dressKids + "4.jpeg"}",
     ],
@@ -76,7 +76,7 @@ ItemModel itemModel5 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Half Curtha",
     amount: 1200.0,
-    imageUrl: [
+    imagePath: [
       "${dressKids + "5.1.jpg"}",
       "${dressKids + "5.jpg"}",
       "${dressKids + "5.2.jpg"}",
@@ -96,7 +96,7 @@ ItemModel itemModel6 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Blue Plan",
     amount: 1800.0,
-    imageUrl: [
+    imagePath: [
       "${dressMen + "1.1.jpg"}",
       "${dressMen + "1.jpg"}",
     ],
@@ -113,7 +113,7 @@ ItemModel itemModel7 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Exico Shirt",
     amount: 1200.0,
-    imageUrl: [
+    imagePath: [
       "${dressMen + "2.1.jpg"}",
       "${dressMen + "2.jpg"}",
     ],
@@ -130,7 +130,7 @@ ItemModel itemModel8 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Men Shirt",
     amount: 1000.0,
-    imageUrl: [
+    imagePath: [
       "${dressMen + "3.1.jpg"}",
       "${dressMen + "3.jpg"}",
       "${dressMen + "3.2.jpg"}",
@@ -148,7 +148,7 @@ ItemModel itemModel9 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Plane Shirt",
     amount: 1200.0,
-    imageUrl: [
+    imagePath: [
       "${dressMen + "4.1.jpg"}",
       "${dressMen + "4.jpg"}",
     ],
@@ -165,7 +165,7 @@ ItemModel itemModel10 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Men Half Curtha",
     amount: 3200.0,
-    imageUrl: [
+    imagePath: [
       "${dressMen + "5.jpg"}",
     ],
     sizeList: [false, true, true, false],
@@ -181,7 +181,7 @@ ItemModel itemModel11 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Men Curtha Coat",
     amount: 2500.0,
-    imageUrl: [
+    imagePath: [
       "${dressMen + "6.jpg"}",
       "${dressMen + "6.1.jpg"}",
     ],
@@ -200,7 +200,7 @@ ItemModel itemModel12 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Long Top",
     amount: 900.0,
-    imageUrl: [
+    imagePath: [
       "${dressWomen + "1.jpg"}",
       "${dressWomen + "1.1.jpg"}",
       "${dressWomen + "1.2.jpg"}",
@@ -218,7 +218,7 @@ ItemModel itemModel13 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Long Top",
     amount: 1200.0,
-    imageUrl: [
+    imagePath: [
       "${dressWomen + "2.jpg"}",
       "${dressWomen + "2.1.jpg"}",
       "${dressWomen + "2.2.jpeg"}",
@@ -236,7 +236,7 @@ ItemModel itemModel14 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Silky Long",
     amount: 1500.0,
-    imageUrl: [
+    imagePath: [
       "${dressWomen + "3.1.jpg"}",
       "${dressWomen + "3.2.jpg"}",
     ],
@@ -255,7 +255,7 @@ ItemModel itemModel15 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Indian Jersey",
     amount: 500.0,
-    imageUrl: ["${jerseyKids + "1.jpg"}"],
+    imagePath: ["${jerseyKids + "1.jpg"}"],
     sizeList: [true, true, true, true],
     colorList: [],
     haveOffer: false,
@@ -269,7 +269,7 @@ ItemModel itemModel16 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Fly Emirates",
     amount: 700.0,
-    imageUrl: [
+    imagePath: [
       "${jerseyKids + "2.1.jpg"}",
       "${jerseyKids + "2.jpg"}",
     ],
@@ -286,7 +286,7 @@ ItemModel itemModel17 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Jersey",
     amount: 800.0,
-    imageUrl: ["${jerseyKids + "3.jpg"}"],
+    imagePath: ["${jerseyKids + "3.jpg"}"],
     sizeList: [true, true, false, false],
     colorList: [],
     haveOffer: true,
@@ -300,7 +300,7 @@ ItemModel itemModel18 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Jersey",
     amount: 200.0,
-    imageUrl: ["${jerseyKids + "4.jpg"}"],
+    imagePath: ["${jerseyKids + "4.jpg"}"],
     sizeList: [true, true, true, true],
     colorList: [],
     haveOffer: true,
@@ -314,7 +314,7 @@ ItemModel itemModel19 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Jersey",
     amount: 500.0,
-    imageUrl: ["${jerseyKids + "5.jpg"}"],
+    imagePath: ["${jerseyKids + "5.jpg"}"],
     sizeList: [true, true, false, false],
     colorList: [],
     haveOffer: false,
@@ -328,7 +328,7 @@ ItemModel itemModel20 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Jersey",
     amount: 150.0,
-    imageUrl: ["${jerseyKids + "7.jpg"}"],
+    imagePath: ["${jerseyKids + "7.jpg"}"],
     sizeList: [false, true, true, true],
     colorList: [],
     haveOffer: true,
@@ -344,7 +344,7 @@ ItemModel itemModel21 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "RCB Jersey",
     amount: 1200.0,
-    imageUrl: [
+    imagePath: [
       "${jerseyMen + "1.jpg"}",
       "${jerseyMen + "1.1.jpg"}",
       "${jerseyMen + "1.2.jpg"}",
@@ -362,7 +362,7 @@ ItemModel itemModel22 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Jersey",
     amount: 400.0,
-    imageUrl: ["${jerseyMen + "2.jpg"}"],
+    imagePath: ["${jerseyMen + "2.jpg"}"],
     sizeList: [true, true, true, true],
     colorList: [],
     haveOffer: true,
@@ -376,7 +376,7 @@ ItemModel itemModel23 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Blue White",
     amount: 700.0,
-    imageUrl: [
+    imagePath: [
       "${jerseyMen + "3.1.jpg"}",
       "${jerseyMen + "3.jpg"}",
     ],
@@ -393,7 +393,7 @@ ItemModel itemModel24 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Color Jersey",
     amount: 700.0,
-    imageUrl: ["${jerseyMen + "4.jpg"}"],
+    imagePath: ["${jerseyMen + "4.jpg"}"],
     sizeList: [false, true, true, false],
     colorList: [],
     haveOffer: false,
@@ -407,7 +407,7 @@ ItemModel itemModel25 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Jersey",
     amount: 700.0,
-    imageUrl: ["${jerseyMen + "5.jpg"}", "${jerseyMen + "5.1.jpg"}"],
+    imagePath: ["${jerseyMen + "5.jpg"}", "${jerseyMen + "5.1.jpg"}"],
     sizeList: [false, true, true, false],
     colorList: [],
     haveOffer: true,
@@ -421,7 +421,7 @@ ItemModel itemModel26 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Fire Jersey",
     amount: 1300.0,
-    imageUrl: ["${jerseyMen + "6.jpg"}"],
+    imagePath: ["${jerseyMen + "6.jpg"}"],
     sizeList: [true, true, false, false],
     colorList: [],
     haveOffer: false,
@@ -437,7 +437,7 @@ ItemModel itemModel27 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "RCB Jersey",
     amount: 500.0,
-    imageUrl: ["${jerseyWomen + "1.webp"}"],
+    imagePath: ["${jerseyWomen + "1.webp"}"],
     sizeList: [true, true, true, false],
     colorList: [],
     haveOffer: true,
@@ -451,7 +451,7 @@ ItemModel itemModel28 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Jeep Jersey",
     amount: 1000.0,
-    imageUrl: [
+    imagePath: [
       "${jerseyWomen + "2.jpg"}",
       "${jerseyWomen + "2.1.jpg"}",
       "${jerseyWomen + "2.2.jpg"}",
@@ -469,7 +469,7 @@ ItemModel itemModel29 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Indian Jersey",
     amount: 400.0,
-    imageUrl: [
+    imagePath: [
       "${jerseyWomen + "3.jpg"}",
       "${jerseyWomen + "3.1.jpg"}",
       "${jerseyWomen + "3.2.jpg"}"
@@ -487,7 +487,7 @@ ItemModel itemModel30 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Track Jersey",
     amount: 2000.0,
-    imageUrl: ["${jerseyWomen + "4.jpg"}"],
+    imagePath: ["${jerseyWomen + "4.jpg"}"],
     sizeList: [true, true, true, true],
     colorList: [],
     haveOffer: true,
@@ -501,7 +501,7 @@ ItemModel itemModel31 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Track Jersey",
     amount: 500.0,
-    imageUrl: ["${jerseyWomen + "5.jpg"}", "${jerseyWomen + "5.1.jpg"}"],
+    imagePath: ["${jerseyWomen + "5.jpg"}", "${jerseyWomen + "5.1.jpg"}"],
     sizeList: [true, true, true, false],
     colorList: [],
     haveOffer: true,
@@ -515,7 +515,7 @@ ItemModel itemModel32 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Jersey",
     amount: 7000.0,
-    imageUrl: ["${jerseyWomen + "6.jpg"}"],
+    imagePath: ["${jerseyWomen + "6.jpg"}"],
     sizeList: [true, true, true, true],
     colorList: [],
     haveOffer: true,
@@ -531,7 +531,7 @@ ItemModel itemModel33 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Yellow Pant",
     amount: 800.0,
-    imageUrl: ["${pantsKids + "1.png"}", "${pantsKids + "1.1.jpeg"}"],
+    imagePath: ["${pantsKids + "1.png"}", "${pantsKids + "1.1.jpeg"}"],
     sizeList: [true, true, false, false],
     colorList: [],
     haveOffer: true,
@@ -545,7 +545,7 @@ ItemModel itemModel34 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Trouser",
     amount: 500.0,
-    imageUrl: [
+    imagePath: [
       "${pantsKids + "2.jpg"}",
       "${pantsKids + "2.1.jpg"}",
       "${pantsKids + "2.2.jpg"}"
@@ -563,7 +563,7 @@ ItemModel itemModel35 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Full Pant",
     amount: 1500.0,
-    imageUrl: [
+    imagePath: [
       "${pantsKids + "3.1.jpg"}",
       "${pantsKids + "3.jpeg"}",
       "${pantsKids + "3.2.jpg"}"
@@ -581,7 +581,7 @@ ItemModel itemModel36 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Red Pants",
     amount: 700.0,
-    imageUrl: ["${pantsKids + "4.jpg"}"],
+    imagePath: ["${pantsKids + "4.jpg"}"],
     sizeList: [false, true, true, true],
     colorList: [],
     haveOffer: true,
@@ -595,7 +595,7 @@ ItemModel itemModel37 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Track Pant",
     amount: 1200.0,
-    imageUrl: [
+    imagePath: [
       "${pantsKids + "5.1.jpg"}",
       "${pantsKids + "5.jpg"}",
       "${pantsKids + "5.2.webp"}",
@@ -615,7 +615,7 @@ ItemModel itemModel38 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Men Pant",
     amount: 1000.0,
-    imageUrl: [
+    imagePath: [
       "${pantsMen + "1.1.jpg"}",
       "${pantsMen + "1.jpg"}",
       "${pantsMen + "1.2.jpg"}",
@@ -633,7 +633,7 @@ ItemModel itemModel39 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Plane Pant",
     amount: 1200.0,
-    imageUrl: [
+    imagePath: [
       "${pantsMen + "2.1.jpg"}",
       "${pantsMen + "2.jpg"}",
     ],
@@ -650,7 +650,7 @@ ItemModel itemModel40 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Pants",
     amount: 3200.0,
-    imageUrl: [
+    imagePath: [
       "${pantsMen + "3.jpg"}",
       "${pantsMen + "3.1.jpg"}",
       "${pantsMen + "3.2.jpg"}",
@@ -668,7 +668,7 @@ ItemModel itemModel41 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Pants",
     amount: 2000.0,
-    imageUrl: [
+    imagePath: [
       "${pantsMen + "4.jpg"}",
       "${pantsMen + "4.1.jpg"}",
     ],
@@ -685,7 +685,7 @@ ItemModel itemModel42 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Pants",
     amount: 1000.0,
-    imageUrl: ["${pantsMen + "5.jpg"}"],
+    imagePath: ["${pantsMen + "5.jpg"}"],
     sizeList: [false, true, true, false],
     colorList: [],
     haveOffer: true,
@@ -701,7 +701,7 @@ ItemModel itemModel43 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Long Pant",
     amount: 1200.0,
-    imageUrl: ["${pantsWomen + "1.jpeg"}", "${pantsWomen + "1.1.jpg"}"],
+    imagePath: ["${pantsWomen + "1.jpeg"}", "${pantsWomen + "1.1.jpg"}"],
     sizeList: [true, true, true, false],
     colorList: [],
     haveOffer: true,
@@ -715,7 +715,7 @@ ItemModel itemModel44 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Ladies Pant",
     amount: 800.0,
-    imageUrl: [
+    imagePath: [
       "${pantsWomen + "2.webp"}",
       "${pantsWomen + "2.1.webp"}",
       "${pantsWomen + "2.2.jpg"}"
@@ -733,7 +733,7 @@ ItemModel itemModel45 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Pant",
     amount: 1200.0,
-    imageUrl: [
+    imagePath: [
       "${pantsWomen + "3.webp"}",
       "${pantsWomen + "3.1.webp"}",
       "${pantsWomen + "3.2.jpg"}",
@@ -751,7 +751,7 @@ ItemModel itemModel46 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Print Pant",
     amount: 1200.0,
-    imageUrl: [
+    imagePath: [
       "${pantsWomen + "4.jpg"}",
       "${pantsWomen + "4.1.jpg"}",
       "${pantsWomen + "4.2.jpg"}",
@@ -771,7 +771,7 @@ ItemModel itemModel47 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Pink Coat",
     amount: 1800.0,
-    imageUrl: [
+    imagePath: [
       "${coatsKids + "1.jpg"}",
       "${coatsKids + "1.1.jpg"}",
     ],
@@ -788,7 +788,7 @@ ItemModel itemModel48 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Coat",
     amount: 1100.0,
-    imageUrl: ["${coatsKids + "2.jpg"}"],
+    imagePath: ["${coatsKids + "2.jpg"}"],
     sizeList: [true, true, false, false],
     colorList: [],
     haveOffer: true,
@@ -802,7 +802,7 @@ ItemModel itemModel49 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Coat",
     amount: 900.0,
-    imageUrl: ["${coatsKids + "3.jpg"}"],
+    imagePath: ["${coatsKids + "3.jpg"}"],
     sizeList: [true, true, false, false],
     colorList: [],
     haveOffer: true,
@@ -816,7 +816,7 @@ ItemModel itemModel50 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Coat",
     amount: 1400.0,
-    imageUrl: [
+    imagePath: [
       "${coatsKids + "4.jpeg"}",
       "${coatsKids + "4.1.jpg"}",
     ],
@@ -833,7 +833,7 @@ ItemModel itemModel51 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Coat",
     amount: 2200.0,
-    imageUrl: ["${coatsKids + "5.jpg"}"],
+    imagePath: ["${coatsKids + "5.jpg"}"],
     sizeList: [true, true, false, false],
     colorList: [],
     haveOffer: true,
@@ -847,7 +847,7 @@ ItemModel itemModel52 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "oat",
     amount: 1800.0,
-    imageUrl: ["${coatsKids + "6.jpg"}"],
+    imagePath: ["${coatsKids + "6.jpg"}"],
     sizeList: [true, true, false, false],
     colorList: [],
     haveOffer: true,
@@ -863,7 +863,7 @@ ItemModel itemModel53 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Horse Coat",
     amount: 1500.0,
-    imageUrl: [
+    imagePath: [
       "${coatsMen + "1.webp"}",
       "${coatsMen + "1.1.jpg"}",
       "${coatsMen + "1.2.jpg"}",
@@ -881,7 +881,7 @@ ItemModel itemModel54 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Black Coat",
     amount: 2500.0,
-    imageUrl: [
+    imagePath: [
       "${coatsMen + "2.jpg"}",
       "${coatsMen + "2.1.jpg"}",
       "${coatsMen + "2.2.jpg"}",
@@ -899,7 +899,7 @@ ItemModel itemModel55 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Half Black Coat",
     amount: 7500.0,
-    imageUrl: [
+    imagePath: [
       "${coatsMen + "3.jpg"}",
       "${coatsMen + "3.1.jpg"}",
       "${coatsMen + "3.2.jpg"}",
@@ -917,7 +917,7 @@ ItemModel itemModel56 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Men Coat",
     amount: 3500.0,
-    imageUrl: [
+    imagePath: [
       "${coatsMen + "4.jpg"}",
     ],
     sizeList: [true, true, true, true],
@@ -933,7 +933,7 @@ ItemModel itemModel57 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Winter Coat",
     amount: 10500.0,
-    imageUrl: [
+    imagePath: [
       "${coatsMen + "6.jpg"}",
     ],
     sizeList: [true, true, true, true],
@@ -951,7 +951,7 @@ ItemModel itemModel58 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Women Coat",
     amount: 4400.0,
-    imageUrl: [
+    imagePath: [
       "${coatsWomen + "1.jpg"}",
       "${coatsWomen + "1.2.jpg"}",
       "${coatsWomen + "1.3.jpg"}",
@@ -969,7 +969,7 @@ ItemModel itemModel59 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Winter Coat",
     amount: 9400.0,
-    imageUrl: [
+    imagePath: [
       "${coatsWomen + "2.jpg"}",
     ],
     sizeList: [true, true, true, false],
@@ -985,7 +985,7 @@ ItemModel itemModel60 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Half Blue Coat",
     amount: 8500.0,
-    imageUrl: [
+    imagePath: [
       "${coatsWomen + "3.jpg"}",
       "${coatsWomen + "3.1.jpg"}",
       "${coatsWomen + "3.2.jpg"}",
@@ -1003,7 +1003,7 @@ ItemModel itemModel61 = ItemModel(
     id: DateTime.now().microsecondsSinceEpoch,
     name: "Grey Top Coat",
     amount: 4400.0,
-    imageUrl: [
+    imagePath: [
       "${coatsWomen + "5.png"}",
       "${coatsWomen + "5.1.png"}",
     ],

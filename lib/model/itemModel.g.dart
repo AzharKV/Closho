@@ -21,7 +21,7 @@ class ItemModelAdapter extends TypeAdapter<ItemModel> {
       id: fields[0] as int,
       name: fields[1] as String,
       amount: fields[2] as double?,
-      imageUrl: (fields[3] as List).cast<String>(),
+      imagePath: (fields[3] as List).cast<String>(),
       sizeList: (fields[6] as List).cast<bool>(),
       colorList: (fields[7] as List).cast<String>(),
       haveOffer: fields[4] as bool?,
@@ -44,7 +44,7 @@ class ItemModelAdapter extends TypeAdapter<ItemModel> {
       ..writeByte(2)
       ..write(obj.amount)
       ..writeByte(3)
-      ..write(obj.imageUrl)
+      ..write(obj.imagePath)
       ..writeByte(4)
       ..write(obj.haveOffer)
       ..writeByte(5)

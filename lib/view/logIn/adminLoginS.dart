@@ -3,7 +3,7 @@ import 'package:closho/constants/constVariables.dart';
 import 'package:closho/constants/strings.dart';
 import 'package:closho/controller/loginController.dart';
 import 'package:closho/widgets/constWidgets.dart';
-import 'package:closho/widgets/customPaint/semiCirclePaint.dart';
+import 'package:closho/widgets/semiCirclePaint.dart';
 import 'package:closho/widgets/registrationTextField.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -17,6 +17,7 @@ class AdminLoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Stack(
         children: [
           Hero(

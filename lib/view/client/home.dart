@@ -140,11 +140,11 @@ class Home extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                     child: data.isAsset!
                         ? Image.asset(
-                            "${data.imageUrl[0]}",
+                            "${data.imagePath[0]}",
                             fit: BoxFit.fill,
                           )
                         : Image.file(
-                            File("${data.imageUrl[0]}"),
+                            File("${data.imagePath[0]}"),
                             fit: BoxFit.fill,
                           ),
                   ),

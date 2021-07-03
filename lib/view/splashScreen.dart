@@ -3,7 +3,7 @@ import 'package:closho/constants/strings.dart';
 import 'package:closho/model/itemModel.dart';
 import 'package:closho/services/sharedPref.dart';
 import 'package:closho/view/admin/dashBoard.dart';
-import 'package:closho/widgets/customPaint/semiCirclePaint.dart';
+import 'package:closho/widgets/semiCirclePaint.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';

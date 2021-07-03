@@ -10,7 +10,7 @@ class ItemModel {
   @HiveField(2)
   final double? amount;
   @HiveField(3)
-  final List<String> imageUrl;
+  final List<String> imagePath;
   @HiveField(4)
   final bool? haveOffer;
   @HiveField(5)
@@ -35,7 +35,7 @@ class ItemModel {
     required this.id,
     required this.name,
     this.amount = 0.0,
-    required this.imageUrl,
+    required this.imagePath,
     required this.sizeList,
     required this.colorList,
     this.haveOffer = false,

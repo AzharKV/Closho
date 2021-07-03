@@ -27,7 +27,7 @@ class ItemDetailsScreen extends StatelessWidget {
             child: Stack(
               children: [
                 CarouselSlider.builder(
-                  itemCount: itemModel.imageUrl.length,
+                  itemCount: itemModel.imagePath.length,
                   carouselController: carouselController,
                   options: CarouselOptions(
                       height: deviceHeight * 0.95,
@@ -38,12 +38,12 @@ class ItemDetailsScreen extends StatelessWidget {
                       (BuildContext context, int index, int realIndex) {
                     return itemModel.isAsset!
                         ? Image.asset(
-                            "${itemModel.imageUrl[index]}",
+                            "${itemModel.imagePath[index]}",
                             fit: BoxFit.cover,
                           )
                         : Image.file(
-                            File("${itemModel.imageUrl[index]}"),
-                            fit: BoxFit.fill,
+                            File("${itemModel.imagePath[index]}"),
+                            fit: BoxFit.cover,
                           );
                   },
                 ),
@@ -53,7 +53,7 @@ class ItemDetailsScreen extends StatelessWidget {
                   right: 0.0,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: itemModel.imageUrl.asMap().entries.map((entry) {
+                    children: itemModel.imagePath.asMap().entries.map((entry) {
                       return Obx(
                         () => GestureDetector(
                           onTap: () =>

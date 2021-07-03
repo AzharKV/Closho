@@ -4,7 +4,7 @@ import 'package:closho/constants/strings.dart';
 import 'package:closho/controller/loginController.dart';
 import 'package:closho/view/logIn/registrationScreen.dart';
 import 'package:closho/widgets/constWidgets.dart';
-import 'package:closho/widgets/customPaint/semiCirclePaint.dart';
+import 'package:closho/widgets/semiCirclePaint.dart';
 import 'package:closho/widgets/registrationTextField.dart';
 import 'package:closho/widgets/signUpWith.dart';
 import 'package:closho/widgets/textRightIconButton.dart';
@@ -20,14 +20,14 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Stack(
         children: [
           Hero(
             tag: semiCircle,
             child: CustomPaint(
-              size: Size(deviceWidth, (deviceWidth * 1.9)),
-              painter: SemiCirclePaint(),
-            ),
+                size: Size(deviceWidth, (deviceWidth * 1.9)),
+                painter: SemiCirclePaint()),
           ),
           SingleChildScrollView(
             padding: const EdgeInsets.only(top: 50.0),
