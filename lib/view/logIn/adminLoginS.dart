@@ -98,6 +98,12 @@ class AdminLoginScreen extends StatelessWidget {
               ),
             ),
           ),
+          Align(
+            alignment: Alignment.center,
+            child: Obx(() => Visibility(
+                visible: logInController.loading.value,
+                child: CircularProgressIndicator())),
+          ),
         ],
       ),
     );
