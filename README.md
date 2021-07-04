@@ -1,16 +1,23 @@
-# closho
+# CloSho
 
-A new Flutter project.
+A Flutter Shopping App, Client Section & Admin Panel
 
-## Getting Started
+-> Hive Database  
+-> Getx State Management  
 
-This project is a starting point for a Flutter application.
+Registration Section  
+-> Admin Login  
+-> User Registration  
+-> User LogIn  
+<img src="https://github.com/AzharKV/Closho/blob/master/screenshot/20210703_213537.gif?raw=true" width="30%">  
 
-A few resources to get you started if this is your first Flutter project:
+Client Section  
+-> Product List With Different Category  
+-> Add To Cart  
+-> Delete From cart  
+<img src="https://github.com/AzharKV/Closho/blob/master/screenshot/20210703_213417.gif?raw=true" width="30%">  
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Admin Section  
+-> Add Product To Database  
+-> Product & Cart TotalList  
+<img src="https://github.com/AzharKV/Closho/blob/master/screenshot/20210703_213644.gif?raw=true" width="30%">  
